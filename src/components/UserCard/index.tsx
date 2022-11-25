@@ -74,8 +74,8 @@ export default function UserCard({ data }: { data: UserCardProps }) {
           <div className={'userImageContainer'}>
             <img
               alt={data.name}
-              src={'/images/dummy.jpg'}
-              className={'userImage'}
+              src={'/images/dummy.jpg'} // ! [NOTE]: USED DUMMY IMAGE BECAUSE
+              className={'userImage'} // ! API DOESN'T PROVIDE ANY IMAGE
             />
           </div>
         }
