@@ -144,6 +144,7 @@ export default function UserCard({ data }: { data: UserCardProps }) {
               name={['user', 'name']}
               label='Name'
               rules={[{ required: true }]}
+              initialValue={data.name}
             >
               <Input />
             </Form.Item>
@@ -151,6 +152,7 @@ export default function UserCard({ data }: { data: UserCardProps }) {
               name={['user', 'email']}
               label='Email'
               rules={[{ type: 'email', required: true }]}
+              initialValue={data.email}
             >
               <Input />
             </Form.Item>
@@ -158,6 +160,7 @@ export default function UserCard({ data }: { data: UserCardProps }) {
               name={['user', 'phone']}
               label='Phone Number'
               rules={[{ required: true }]}
+              initialValue={data.phone}
             >
               <Input />
             </Form.Item>
@@ -165,6 +168,7 @@ export default function UserCard({ data }: { data: UserCardProps }) {
               name={['user', 'website']}
               label='Website'
               rules={[{ type: 'url', required: true }]}
+              initialValue={data.website}
             >
               <Input />
             </Form.Item>
