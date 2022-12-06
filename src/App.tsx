@@ -8,7 +8,7 @@ import Layout from './layout';
 
 // Screens
 import Home from './screens/Home';
-import { Users } from './screens/Users';
+import Product from './screens/Product';
 
 // styles
 import './styles/globals.css';
@@ -18,7 +18,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<Home />} />
-        <Route path='/users' element={<Users />} />
+        <Route path='/product' element={<Product />} />
       </Route>
     </Routes>
   );

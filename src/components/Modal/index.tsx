@@ -1,17 +1,17 @@
-import React, { Children, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 // packages
-import { Button, Modal as AntDModal } from 'antd';
+import { Modal as AntDModal } from 'antd';
 
-export default function editModal() {
+export default function customModal() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const Modal = useCallback(
-    ({ children }: { children: JSX.Element }) => {
+    ({ children, title }: { children: JSX.Element; title: string }) => {
       return (
         <>
           <AntDModal
-            title='Edit User'
+            title={title}
             open={modalOpen}
             onOk={() => {
               setModalOpen(false);

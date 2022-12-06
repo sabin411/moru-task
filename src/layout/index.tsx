@@ -6,7 +6,7 @@ import { Link, Outlet } from 'react-router-dom';
 // const
 const routes = [
   { name: 'Home', path: '/' },
-  { name: 'users', path: '/users' },
+  { name: 'product', path: '/product' },
 ];
 
 export default function Layout() {

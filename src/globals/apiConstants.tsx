@@ -1,5 +1,6 @@
-export const BASE_URL = 'https://jsonplaceholder.typicode.com/users';
+export const BASE_URL = 'http://localhost:8000';
 export const apiConstants = {
-  Edit_User: (userId: number) => `${BASE_URL}/${userId}`,
-  Delete_User: (userId: number) => `${BASE_URL}/${userId}`,
+  GET_PRODUCTS: `${BASE_URL}/products`,
+  Edit_Product: (productId: number) => `${BASE_URL}/products/${productId}`,
+  Delete_Product: (productId: number) => `${BASE_URL}/products/${productId}`,
 };
